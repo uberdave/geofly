@@ -1,0 +1,9 @@
+<h1>Editing post</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back',:controller => 'posts', :action => "show" %> |
+<%= link_to 'Places', :controller => 'posts', :action => "index"%> |
+<%# link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%# link_to 'Delete', :controller => 'posts', :action => "destroy"%>
+<%= link_to "Delete", post_path(:id =>@post.id), :confirm => 'Are you sure?', :method => :delete %>

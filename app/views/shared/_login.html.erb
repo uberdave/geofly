@@ -1,0 +1,22 @@
+<div id="nav">
+  
+    <% if current_user %>
+    <% @theUser = User.find_by_id(current_user.id) %>
+    <%# check if REgistered User %>
+    <% if @theUser.salt %>
+      <%= link_to "Edit Profile",  edit_user_path(current_user.id), rel: 'external'  %>
+      <% end %>
+       <%# link_to "Logout", logout_url(:protocol => "http"), method: :post %>
+      <%=link_to "Logout", :logout, method: :post %>
+    <% else %>
+      <%= link_to "Register", new_user_url(:protocol => "https")  %> |
+      <%= link_to "Login",login_url(:protocol => "https") %>
+      <%# link_to "Login", :login %> |
+      <%= link_to 'Login with Twitter', auth_at_provider_path(:provider => :twitter), rel: 'external' %>  | 
+     <%= link_to 'Login with Facebook', auth_at_provider_path(:provider => :facebook), rel: 'external' %>
+    <% end %>
+  </div>
+   <div>
+    <p id="notice"><%= flash[:notice] %></p>
+    <p id="alert"><%= flash[:alert] %></p>
+  </div>

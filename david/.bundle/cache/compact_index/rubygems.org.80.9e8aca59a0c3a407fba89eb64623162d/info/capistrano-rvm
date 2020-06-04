@@ -1,0 +1,7 @@
+---
+0.0.1 capistrano:>= 0|checksum:4edb4c6f47c492d348bff932a189f5e8142964b7e98036c5e1236516b1ec2b80
+0.0.2 capistrano:>= 0|checksum:a5278c126b3cb2d379365e7a9a6f128df392a3a94a3efdb91eb57bf68892714a
+0.0.3 capistrano:>= 0|checksum:84d28e0ab7d15c1333b30e6a062266ef3f430edb9fd66a03e74b6ef7f3e3639e
+0.1.0 capistrano:~> 3.0,sshkit:~> 1.2.0|checksum:f26ef019e82781b11981e6ce0f7c32ecaba0a1c76d3c9f04f0cd5c1d77f9aef4
+0.1.1 capistrano:~> 3.0,sshkit:~> 1.2|checksum:49d0b51ea65ad4a9bc40e320a1bce39fe0c5d2b92c3e9491ecdfae2669a251d0
+0.1.2 capistrano:~> 3.0,sshkit:~> 1.2|checksum:4adb7ffd98d2c1335b597b063e1e6cafd9dd2d6ecc9d358bf78100aad8475e97

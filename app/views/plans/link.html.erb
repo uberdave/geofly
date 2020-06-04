@@ -1,0 +1,38 @@
+<div id="plans">
+  <h1>geofly.me</h1>
+  <div class="plan_description">
+<p>Premium links give you the ability to link to outside web sites or to display up to 20 items when your tag is clicked.</p>
+</div>
+  <%# @plans.each do |plan| %>
+    <div class="plan">
+      <div class="name">
+      <p>
+      Upgrade this&nbsp;<%= @plan.name %>?</p>
+      <p> <img src = <%= @post.image %>></p>
+     <p>  Title:<%=@post.title%></p>
+     <p>  Description:<%=@post.description %></p>
+       <p> for only</p><div class="details">
+        <div class="price">
+          <%= number_to_currency @plan.price, :precision => 0 %>
+          /year
+        </div>
+        </div>
+      
+      
+        
+        
+        <div class="signup">
+        <p>
+          <%= link_to "Sign up", new_subscription_path(:plan_id => @plan.id,:post_num => @post.id),:rel => "external"%>
+          </p>
+        </div>
+    </div>
+      </div>
+    
+    </div>
+  <%# end %>
+  
+
+
+<div class="clear"></div>
+</div>

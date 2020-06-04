@@ -1,0 +1,58 @@
+
+<style>
+.ui-grid-b img {
+    width  : 100%;
+    height : auto;
+}
+
+
+</style>
+<div data-role="header">
+    <h1><%= @profile.title %></h1>
+</div>
+
+<div class="ui-grid-b">
+
+
+<img src= "<%= @profile.profile_image %>" alt="No Image" %>
+
+   
+  
+    
+
+</div>
+
+
+</p>
+
+<%# @post.distance %>
+<%# @post.bearing %>
+ <%# post.distance.round(2) %>
+</p>
+
+<p>
+  
+  <%= @user.profile.description %>
+</p>
+<%# if current_user %>
+
+<%# if current_user.id == @post.user_id %>
+<%# link_to 'Edit', :controller => 'posts', :action => "edit"%>  
+<%# end %><%# end %>
+<%# link_to 'Back', :controller => 'posts', :action => "index"%> 
+
+
+<div data-role="footer">
+<% if @profile.facebook.empty? %>
+<% else %>
+<a href="<%=@user.profile.facebook %>"><img src = "https://geofly.me/images/FaceBook_Icon_72.png"></a>
+<% end %>
+<% if @profile.twitter.empty? %>
+<% else %>
+<a href="<%=@user.profile.twitter %>"><img src = "https://geofly.me/images/Twitter_Icon_72.png"></a>
+<% end %>
+<% if @user.profile.linkedin.empty? %>
+<% else %>
+<a href="<%=@user.profile.linkedin %>"><img src = "https://geofly.me/images/Linked_In_Icon_72.png"></a>
+<% end %>
+</div>

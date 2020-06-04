@@ -1,0 +1,51 @@
+<%= form_for(@profile,  :html => {:data => {:ajax => 'false'}})  do |f| %>
+  <% if @profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% @profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  </p>
+  <% if @current_user %>
+  <div class="field">
+    <%= f.hidden_field :user_id, :value => @current_user.id%>
+    </div>
+    
+   <% end %>
+    <div class="field">
+    <%= f.label :profile_image %><br />
+    <%= f.file_field :profile_image %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_area :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+<div class="field">
+    <%= f.label :facebook %><br />
+    <%= f.text_area :facebook %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter %><br />
+    <%= f.text_area :twitter %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin %><br />
+    <%= f.text_area :linkedin %>
+  </div>
+  
+
+  <div class="actions">
+  
+    <%= f.submit %>
+  </div>
+<% end %>

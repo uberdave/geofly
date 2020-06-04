@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: MyString
+  image: MyText
+  title: MyText
+  description: MyText
+  ext_link: MyString
+  type: 
+  expire_date: 2013-12-19
+
+two:
+  user_id: MyString
+  image: MyText
+  title: MyText
+  description: MyText
+  ext_link: MyString
+  type: 
+  expire_date: 2013-12-19

@@ -1,0 +1,1 @@
+Plan.create!(:name => "Upgrade Link to Premium", :price => 10, :quantity => 1)

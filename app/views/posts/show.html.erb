@@ -1,0 +1,65 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lat:</b><%= @post.lat %>,<b>Lng:</b><%= @post.lng %>
+</p>
+
+<style>
+.ui-grid-b img {
+    width  : 100%;
+    height : auto;
+}
+
+
+</style>
+<div data-role="header">
+    <h1><%= @post.title %></h1>
+</div>
+
+<div class="ui-grid-z">
+
+    <a href="">
+    <img src= "<%= @post.image %>" alt="No Image">
+     
+    </a>
+
+   
+  
+    
+
+</div>
+
+
+</p>
+
+<%# @post.distance %>
+<%# @post.bearing %>
+ <%# post.distance.round(2) %>
+</p>
+
+<p>
+  
+  <%= @post.description %>
+</p>
+<% if current_user %>
+<% if current_user.id == 21 %>
+<%= link_to 'Admin Edit', :controller => 'posts', :action => "edit" %> | 
+<% end %>
+<% if current_user.id == @post.user_id %>
+<%= link_to 'Edit', :controller => 'posts', :rel => "external", :action => "edit"%> | 
+<% end %><% end %>
+<%= link_to 'Back', :controller => 'posts', :action => "index"%>
+<div data-role="footer">
+<% if current_user %>
+<%@is_here = @post.profiles.where(user_id = current_user.id) %>
+      <% if @is_here.blank? %>
+    <a href="https://geofly.me/posts/facepaste/?post_id=<%= @post.id %>"data-role="button" data-inline="true" data-mini ="true"data-theme="a">FacePaste!</a>
+       <% else %>
+    <a href="https://geofly.me/posts/eraseface/?post_id=<%= @post.id %>"data-role="button" data-inline="true" data-mini ="true"data-theme="b">EraseFace</a>
+<% end %>
+<%#link_to "Paste Your Face!",'http://localhost:3000/posts/facepaste?user_id=21&post_id=129',:rel => "external" %>
+<% end %>
+<%=link_to "Show  Faces!", profiles_path( :post_id => @post), :action => :index, :rel => "external" %>
+</div>

@@ -1,0 +1,68 @@
+<div data-role="header" data-id="persistheader" data-position="fixed"> 
+	<h1>geofly.me</h1> 
+
+<style>
+	
+	</style>
+</div> 
+
+
+<% @posts.each do |post| %>
+
+
+<ul data-role="listview" data-inset="true">
+
+    
+    <% if post.ext_link.blank? %>
+    <li data-theme= 'f'>
+        <a href="https://geofly.me/posts/<%= post.id %>/">
+        <%= post.title %> 
+        <img src="<%= post.image %>" class="ui-li-has-thumb" class="ui-shadow"/></a>
+      <% else %>
+    <li data-theme= 'f' data-icon="action">
+        <a href="<%= post.ext_link %>">
+        <%= post.title %> 
+        <img src="<%= post.image %>" class="ui-li-has-thumb" class="ui-shadow"/></a>
+    
+    
+    <% end %>
+</li>
+</ul>
+<ul data-role="listview"  data-divider-theme = 'd'>
+
+    
+<a href='https://www.google.com/#q=<%= post.lat %>%2C<%= post.lng %>' id='moreOptions' data-role='button' rel="external" data-icon='info' data-inline="true" data-mini="true" data-iconpos='map'>map</a>
+<%= post.distance.round(2) %>&nbspkm (<%= post.bearing %>&deg; )
+<% @profile_count = post.profiles.size %>
+
+<% if @current_user %>
+
+      <% if @current_user.id == post.user_id %>
+     
+      <a href='https://geofly.me/posts/<%=post.id %>/edit' id='edit' data-role='button' rel="external" data-icon='edit' data-inline="true" data-mini="true" data-iconpos='notext'>edit</a>
+      <% end %>
+      <% if post.profiles.find_by_user_id(@current_user.id) %>
+     
+    <a href="http://geofly.me/posts/eraseface/?post_id=<%= post.id %>"data-role="button" data-inline="true" data-mini ="true"data-theme="b">EraseFace</a>
+       <% else %>
+       <a href="https://geofly.me/posts/facepaste/?post_id=<%= post.id %>"data-role="button" data-inline="true" data-mini ="true"data-theme="a">PasteFace!</a>
+<% end %>
+<% end %>
+ <a href='https://geofly.me/profiles?post_id=<%=post.id %>/' id='user' data-role='button' rel="external" data-icon='user' data-inline="true" data-mini="true" data-iconpos='right'><%=@profile_count %></a>
+
+</ul>
+<% end %>
+
+
+
+
+
+<div data-role="footer" data-id="persistfooter" data-position="fixed" >
+<div data-role="navbar"> 
+<ul>
+<li><a href="/posts" data-role="button" data-icon="back" data-iconpos="right" data-theme="a"  rel="external">Back</a>
+<li><a href="/posts/new" data-role="button" data-icon="plus" data-iconpos="right" data-theme="a"  rel="external">Paste a Place!</a>
+<li><a href="/" data-role="button" data-icon="home"data-iconpos="right" data-theme="a" rel="external">Home</a>
+</ul>
+	</div><!-- /navbar -->	
+</div> 

@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<% if current_user %>
+<% if current_user.id == @user.id %>
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+
+
+
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Home', root_url(:protocol => 'http') %>
+<% else %>
+
+<p> Thank You for Signing Up! A Confirmation email has ben sent.
+</p>
+
+ <% end %>
+ <%end %>

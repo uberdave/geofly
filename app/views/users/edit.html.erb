@@ -1,0 +1,7 @@
+<h1>Editing user</h1>
+<% if current_user.id == @user.id %>
+<%= render 'form' %>
+<%= link_to 'Home', root_url(:protocol => 'http') %>
+<% else %>
+You are Not Authorized to View This Page! 
+<% end %>

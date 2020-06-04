@@ -1,0 +1,48 @@
+---
+0.1.0 |checksum:bddebbf5178d80e532a2f37b1ba3d0c9334d5f27fa22962e2c3b4d7c8f964300
+0.1.1 |checksum:d2f9d4a5828c944444bfded46bed54bfa07fffa08d569516afa0ba1453bc0599
+0.1.2 |checksum:b871d404d326731a6fd7192c7769db742741fe883eb122f18f3269e3d23b1e24
+0.1.3 |checksum:ea1b87bb9f95de4f490e13acfd541e27325c555311fe121931b1b84c2b5cdd10
+0.1.4 bcrypt-ruby:~> 2.1.4|checksum:b3b998b57b57fae453278d27ef66632b45ca05b2d7fe99705e101b70b2c4e3d4
+0.2.0 bcrypt-ruby:~> 2.1.4,json:>= 1.5.1,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1,rails:>= 3.0.0|checksum:8862f2420d79b5b9b48b1e9d6c5c5bb267e16e0afd7c8ec320ef81bc1e3ad603
+0.2.1 bcrypt-ruby:~> 2.1.4,json:>= 1.5.1,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1,rails:>= 3.0.0|checksum:da0dc0ada2c57309cb328087726dd7dd609dcdb1777f441fc75a885af5eb3274
+0.3.0 bcrypt-ruby:~> 2.1.4,json:>= 1.5.1,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1,rails:>= 3.0.0|checksum:1a165d514085c8a3c393d5d02914c47a968c006a97d3d70ff7eaada5fd159064
+0.3.1 bcrypt-ruby:~> 2.1.4,json:>= 1.5.1,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1,rails:>= 3.0.0|checksum:81e34f6dd20575d9a81c79cc457952ba17da58b00931dea87f0ab46e8942fc0a
+0.4.0 bcrypt-ruby:~> 2.1.4,json:>= 1.5.1,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1,rails:>= 3.0.0|checksum:beea93904bb62d418bba33ddfb0417bed14341b8352ac5ff6adab8dee5e94c03
+0.4.1 bcrypt-ruby:~> 2.1.4,json:>= 1.5.1,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1,rails:>= 3.0.0|checksum:5dd42b9dffa5a5e2ed6c993c8f8ac2dc3e659f21bf6c5830c2e9f46493ebd294
+0.4.2 bcrypt-ruby:~> 2.1.4,json:>= 1.5.1,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1,rails:>= 3.0.0|checksum:2c2a2da546007e0fc0b84395805a87d7ca364f407f150ae6acc7b094d65dd6df
+0.5.0 bcrypt-ruby:~> 2.1.4,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1|checksum:b92358eecea8de22c527fd5a3afc9e82c35d101281bd959a3265ef2640bd9a71
+0.5.1 bcrypt-ruby:~> 2.1.4,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1|checksum:a74f0fa78e796ebd8fbd7c07193b2ffc6e747af65447ad2940bec755677c7a6c
+0.5.2 bcrypt-ruby:~> 2.1.4,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1|checksum:d415e6ec80d28e8c11130add3048a58d06dd1ec0adb990ec8d14aca29ce3d026
+0.5.21 bcrypt-ruby:~> 2.1.4,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1|checksum:4cdedfc4acc65e74e6d8ab54d17bb92250537d30d22b5a40724371d9cfa61f78
+0.5.3 bcrypt-ruby:~> 2.1.4,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1|checksum:d89d3a99f30a1b156c3d9f9c46d26169580ff0034f74f92d7acba0b6eac16877
+0.5.30 bcrypt-ruby:~> 2.1.4,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1|checksum:43ca135ca1dd10e1d585fa2bc75403e729287314f8ef0589f6ce670e498eabf5
+0.6.0 bcrypt-ruby:~> 2.1.4,oauth:>= 0.4.4,oauth:>= 0.4.4,oauth2:>= 0.1.1,oauth2:>= 0.1.1|checksum:23af39dbeeed4b89899db0d4881c696999a0fb67ff073e67bbc71657796a0b97
+0.6.1 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth:~> 0.4.4,oauth2:~> 0.4.1,oauth2:~> 0.4.1|checksum:a1e81f15d683ca9f6b431c8fd297e52b65c8a9895aecc22a859ff27a4d02c902
+0.7.0 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth:~> 0.4.4,oauth2:~> 0.5.1,oauth2:~> 0.5.1|checksum:d8119ea8198426e8e440c968293196b9ddba5b58d89080ed995737972b6b0320
+0.7.1 bcrypt-ruby:~> 3.0.0,mongo_mapper:>= 0,oauth:~> 0.4.4,oauth:~> 0.4.4,oauth2:~> 0.4.1,oauth2:~> 0.4.1|checksum:31ecc5de49d4ad8d6c9123bb81be382d66262c36d0acb18534ccf90e085a86e0
+0.7.2 bcrypt-ruby:~> 3.0.0,mongo_mapper:>= 0,oauth:~> 0.4.4,oauth:~> 0.4.4,oauth2:~> 0.4.1,oauth2:~> 0.4.1|checksum:befb9672feded8fe6152d402645be61a6499dbeb3ed27b5a88e863d59537914e
+0.7.3 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth:~> 0.4.4,oauth2:~> 0.4.1,oauth2:~> 0.4.1|checksum:69207c0472614710db01fa26f9bbb0f0bf438fded897ed12d0b405ae22e94437
+0.7.4 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth:~> 0.4.4,oauth2:~> 0.4.1,oauth2:~> 0.4.1|checksum:8061fa13d76543e74bdd3b8bc05418bf3130866cc7a1708f3adb573f7745ebbe
+0.7.5 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth:~> 0.4.4,oauth2:~> 0.4.1,oauth2:~> 0.4.1|checksum:ac1ed79dededd5c748ec95b92d3d804258563a9fc0570af546b21bf699d98251
+0.7.6 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth:~> 0.4.4,oauth2:~> 0.5.1,oauth2:~> 0.5.1|checksum:52685df7f32a8e90c1d5e992393e9067db1ceb62c438e4806ac3b63044b0dbc7
+0.7.7 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth2:~> 0.5.1,sorcery:>= 0|checksum:295f722320c53967b1095d9246b4472003109c5e46e1ef2af5ced9470389fa68
+0.7.8 bcrypt-ruby:~> 3.0.0,bundler:= 1.1.0,oauth:~> 0.4.4,oauth2:~> 0.5.1,sorcery:>= 0|checksum:59159b9ac2221d42247882a55af7baa3bb1d6486fa286d375b359ce9d3730467
+0.7.9 bcrypt-ruby:~> 3.0.0,bundler:= 1.1.0,oauth:~> 0.4.4,oauth2:~> 0.5.1,sorcery:>= 0|checksum:3653c511ca4645b8d94e7ac170627d1ca08a2328b4a2d388f3bbbb7e9c6e177a
+0.7.10 bcrypt-ruby:~> 3.0.0,bundler:= 1.1.0,oauth:~> 0.4.4,oauth2:~> 0.5.1,sorcery:>= 0|checksum:219a18fae8d0a1388b56c7e5fd3ebbf7761a3bf6c4919331d871145816299c0b
+0.7.11 oauth:~> 0.4.4,oauth2:~> 0.5.1|checksum:3cf61a5b7980b4abb55c572b5b3488d16e97484dfa18cb0cc669b5004971d812
+0.7.12 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth2:~> 0.5.1|checksum:7d39b0934c01973f8d445ef8bf49b2ca249a62c4e945e7a627714540e43421e5
+0.7.13 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth2:~> 0.6.0|checksum:cfc6167cb29c44df2865dcb4f15651781462dfe3714b7381b68d4978fc5a5c6c
+0.8.0 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth2:~> 0.8.0|checksum:084a68a980a6e43c98e200e08cb7b0005454b354468449e0ed7f81601df4235d
+0.8.1 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth2:~> 0.8.0|checksum:b3a38d8d6797dfed1f7696be7f070f801a9b6ac31259a248a769c2031b6b66b3
+0.8.2 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth2:~> 0.8.0|checksum:f0b33b6782f3b0546126cbd3b1794f3e88a835ff2093535bbe126265275e8340
+0.8.4 bcrypt-ruby:~> 3.0.0,oauth:~> 0.4.4,oauth2:~> 0.8.0|checksum:2881cdb9f6738c2145b6187c0b1e1aca452f6f40e0440e29c5b45e9ea83c0b59
+0.8.5 bcrypt-ruby:>= 3.0,oauth:~> 0.4.4,oauth2:< 1.0.0&>= 0.8.0|checksum:0f451391886623d0e7ee24481d0334dd83bd70aa716b485986567d6d4d40301a
+0.8.6 bcrypt:~> 3.1,oauth:>= 0.4.4&~> 0.4,oauth2:< 1.0.0&>= 0.8.0|checksum:50d7c6dcd2b634e9ba7beceac08db392f15fe02ce1d0118b86cb8c099ecd58ee,ruby:>= 1.9.3
+0.9.0 bcrypt:~> 3.1,oauth:>= 0.4.4&~> 0.4,oauth2:>= 0.8.0|checksum:8482e04c453ab749e00968f3769798239691513651c40b09020095ff545a9cd4,ruby:>= 1.9.3
+0.9.1 bcrypt:~> 3.1,oauth:>= 0.4.4&~> 0.4,oauth2:>= 0.8.0|checksum:bdbba602895b9e7fc232908411068ab76692cd9e5dc92effbeb3963286b257e5,ruby:>= 1.9.3
+0.10.0 bcrypt:~> 3.1,oauth:>= 0.4.4&~> 0.4,oauth2:>= 0.8.0&~> 1.0|checksum:b3d9edeb2dcacdf3d1c4e4eb2c24054b7084422c06dd721d0d27784f7084f6b8,ruby:>= 2.0.0
+0.10.1 bcrypt:~> 3.1,oauth:>= 0.4.4&~> 0.4,oauth2:>= 0.8.0&~> 1.0|checksum:cf43edfa6c92eafe6f35256e2656bfd2444ce55cb0f77d36036fe7d81b908255,ruby:>= 2.0.0
+0.10.2 bcrypt:~> 3.1,oauth:>= 0.4.4&~> 0.4,oauth2:>= 0.8.0&~> 1.0|checksum:c9c1d3324cc3317ecfaf69c692450f0ad34cb1ca81799fd969ff681997e5295f,ruby:>= 2.0.0
+0.10.3 bcrypt:~> 3.1,oauth:>= 0.4.4&~> 0.4,oauth2:>= 0.8.0&~> 1.0|checksum:40f906965e1ce8d0fc280ad6a4f626a38f52d3ce04ae6326eea09cd4128e4c74,ruby:>= 2.0.0
+0.11.0 bcrypt:~> 3.1,oauth:>= 0.4.4&~> 0.4,oauth2:>= 0.8.0&~> 1.0|checksum:9deb0510c196530416d912c60fa17599f0beeb0a17b7f2c74d552b62bda3cdef,ruby:>= 2.0.0
