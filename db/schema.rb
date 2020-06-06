@@ -13,80 +13,83 @@
 
 ActiveRecord::Schema.define(version: 20140118040158) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "authentications", force: :cascade do |t|
-    t.integer  "user_id",    limit: 4,   null: false
-    t.string   "provider",   limit: 255, null: false
-    t.string   "uid",        limit: 255, null: false
+    t.integer  "user_id",    null: false
+    t.string   "provider",   null: false
+    t.string   "uid",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "payment_notifications", force: :cascade do |t|
-    t.integer  "post_id",        limit: 4
-    t.text     "params",         limit: 65535
-    t.string   "status",         limit: 255
-    t.string   "transaction_id", limit: 255
+    t.integer  "post_id"
+    t.text     "params"
+    t.string   "status"
+    t.string   "transaction_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "plans", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.decimal  "price",                  precision: 10
-    t.integer  "quantity",   limit: 4
+    t.string   "name"
+    t.decimal  "price"
+    t.integer  "quantity"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "posts", force: :cascade do |t|
-    t.integer  "user_id",     limit: 4
-    t.decimal  "lat",                       precision: 15, scale: 10
-    t.decimal  "lng",                       precision: 15, scale: 10
-    t.text     "category",    limit: 65535
-    t.text     "tag",         limit: 65535
-    t.text     "title",       limit: 65535
-    t.text     "description", limit: 65535
-    t.text     "image",       limit: 65535
-    t.text     "ext_link",    limit: 65535
-    t.text     "post_type",   limit: 65535
-    t.text     "expire_date", limit: 65535
+    t.integer  "user_id"
+    t.decimal  "lat",         precision: 15, scale: 10
+    t.decimal  "lng",         precision: 15, scale: 10
+    t.text     "category"
+    t.text     "tag"
+    t.text     "title"
+    t.text     "description"
+    t.text     "image"
+    t.text     "ext_link"
+    t.text     "post_type"
+    t.text     "expire_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "posts_profiles", force: :cascade do |t|
-    t.integer "post_id",    limit: 4
-    t.integer "profile_id", limit: 4
+    t.integer "post_id"
+    t.integer "profile_id"
   end
 
   create_table "profiles", force: :cascade do |t|
-    t.integer  "user_id",     limit: 4
-    t.string   "image",       limit: 255
-    t.string   "title",       limit: 255
-    t.string   "description", limit: 255
-    t.string   "ext_link",    limit: 255
-    t.string   "post_type",   limit: 255
+    t.integer  "user_id"
+    t.string   "image"
+    t.string   "title"
+    t.string   "description"
+    t.string   "ext_link"
+    t.string   "post_type"
     t.datetime "expire_date"
   end
 
   create_table "subscriptions", force: :cascade do |t|
-    t.integer  "plan_id",                        limit: 4
-    t.string   "email",                          limit: 255
+    t.integer  "plan_id"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "paypal_customer_token",          limit: 255
-    t.string   "paypal_recurring_profile_token", limit: 255
-    t.string   "post_num",                       limit: 255
+    t.string   "paypal_customer_token"
+    t.string   "paypal_recurring_profile_token"
+    t.string   "post_num"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "email",                       limit: 255, null: false
-    t.string   "crypted_password",            limit: 255, null: false
-    t.string   "salt",                        limit: 255, null: false
+    t.string   "email",                       null: false
+    t.string   "crypted_password",            null: false
+    t.string   "salt",                        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "activation_state",            limit: 255
-    t.string   "activation_token",            limit: 255
+    t.string   "activation_state"
+    t.string   "activation_token"
     t.datetime "activation_token_expires_at"
   end
 

@@ -23,16 +23,16 @@
 
       <% if @current_user.id == post.user_id %>
      
-      <a href='http://geofly.me/posts/<%=post.id %>/edit' id='edit' data-role='button' rel="external" data-icon='edit' data-inline="true" data-mini="true" data-iconpos='notext'>edit</a>
+      <a href='https://geofly.me/posts/<%=post.id %>/edit' id='edit' data-role='button' rel="external" data-icon='edit' data-inline="true" data-mini="true" data-iconpos='notext'>edit</a>
       <% end %>
        <% if post.profiles.find_by_user_id(@current_user.id) %>
      
-    <a href="http://geofly.me/posts/eraseface/?post_id=<%= post.id %>"data-role="button" data-inline="true" data-mini ="true"data-theme="b">EraseFace</a>
+    <a href="https://geofly.me/posts/eraseface/?post_id=<%= post.id %>"data-role="button" data-inline="true" data-mini ="true"data-theme="b">EraseFace</a>
        <% else %>
-       <a href="http://geofly.me/posts/facepaste/?post_id=<%= post.id %>"data-role="button" data-inline="true" data-mini ="true"data-theme="a">PasteFace!</a>
+       <a href="https://geofly.me/posts/facepaste/?post_id=<%= post.id %>"data-role="button" data-inline="true" data-mini ="true"data-theme="a">PasteFace!</a>
 <% end %>
 <% end %>
- <a href='http://localhost:3000/profiles?post_id=<%=post.id %>/' id='user' data-role='button' rel="external" data-icon='user' data-inline="true" data-mini="true" data-iconpos='right'><%=@profile_count %></a>
+ <a href='https://geofly.me/profiles?post_id=<%=post.id %>/' id='user' data-role='button' rel="external" data-icon='user' data-inline="true" data-mini="true" data-iconpos='right'><%=@profile_count %></a>
 
 </ul>
 <% end %>

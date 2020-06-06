@@ -17,7 +17,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 gem 'rails_serve_static_assets'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -33,7 +33,7 @@ gem 'nokogiri', '=1.8.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'protected_attributes'
-gem 'mysql2', '~> 0.4.10'
+#gem 'mysql2', '~> 0.4.10'
 gem 'sorcery', '~> 0.8.0'
 gem 'carrierwave'
 gem 'rmagick'
@@ -72,7 +72,8 @@ end
 
 gem 'rails_12factor', group: :production
  group :production do
-  gem 'pg'
+  #gem 'pg'  
+gem 'pg', '~> 0.18'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
