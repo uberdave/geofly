@@ -34,7 +34,7 @@ gem 'nokogiri', '=1.8.2'
 # gem 'capistrano-rails', group: :development
 gem 'protected_attributes'
 #gem 'mysql2', '~> 0.4.10'
-gem 'sorcery', '~> 0.8.0'
+gem 'sorcery', '~> 0.15.0'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'geocoder'
